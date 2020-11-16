@@ -1,0 +1,121 @@
+:root{ /* Permite trocar as cores principais do site em apenas um lugar */
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Elementos base */
+body{
+    background : var(--preta);
+    font-family: 'Arial Narrow', Times, Serif; /* Na ausência de Arrial Narrow, supre com outras forntes */
+    color: white;
+}
+
+header .container{ /* .Referencia a div da classe container */
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+}
+
+header .container a{
+    text-decoration: none;
+}
+
+header .logo{
+    margin-top: 10px;
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Narrow', Times; 
+    font-size: 48px;
+}
+
+header nav{ 
+    margin-right: 50%; /* Seta o elemento nav no centro da página */
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50)100%, rgba(0,0,0,.50)100%), url('/img/vikings-capa.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Arial Narrow', sans-serif;
+}
+
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    
+    text-align: justify;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botao a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.botao:hover{
+    background-color:rgb(83, 83, 83);
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
